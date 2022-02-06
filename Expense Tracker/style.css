@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+:root {
+  --bg: rgb(255, 244, 240);
+  --mc: rgb(0, 0, 50);
+}
+nav {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.navigation {
+  margin-left: 10px;
+}
+.link {
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin: 0rem 1rem;
+  color: var(--mc);
+  opacity: 0.7;
+}
+.link:hover {
+  opacity: 1;
+}
+.search {
+  font-size: 1.4rem;
+  color: var(--mc);
+}
+.heading {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.info {
+  width: 50%;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: 50px;
+}
+.lab,
+.input,
+.btn {
+  display: inline-block;
+  margin: 0.4rem;
+}
+.lab {
+  width: 6rem;
+  text-align: center;
+}
+.input {
+  font-size: 1rem;
+  text-align: left;
+  padding: 0.5rem;
+  width: 20rem;
+}
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.list {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+}
+th,
+td,
+.sub {
+  font-size: 1.3rem;
+  padding: 0.4rem;
+  border: 2px solid black;
+}
+td {
+  opacity: 0.9;
+  transition-duration: 0.1s;
+}
+td:hover {
+  opacity: 1;
+}
+.table {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
