@@ -1,0 +1,24 @@
+<!-- work on edit function -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Notes</h1>
+    <p>Keep track of everything in life</p>
+    <hr />
+    <div class="inp">
+      <label for="note">Start Typing</label><br />
+      <textarea id="note"> </textarea>
+      <input class="btn" type="button" value="Add" onclick="add()" />
+      <input class="btn" type="button" value="Clear" onclick="clearit()" />
+    </div>
+    <div class="notes"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
