@@ -1,0 +1,7 @@
+guessing game: done
+calculator
+todo app
+expense tracker
+RNG Thingy
+casino game
+flashcard app
