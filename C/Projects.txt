@@ -1,6 +1,6 @@
 guessing game: done
-calculator: working
-todo app
+calculator: done
+todo app: working
 expense tracker
 RNG Thingy
 casino game
