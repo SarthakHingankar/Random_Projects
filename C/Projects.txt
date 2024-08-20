@@ -1,5 +1,5 @@
 guessing game: done
-calculator
+calculator: working
 todo app
 expense tracker
 RNG Thingy
