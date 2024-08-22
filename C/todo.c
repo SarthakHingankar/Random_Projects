@@ -4,9 +4,8 @@
 
 const int MAX_Tasks = 10;
 const int MAX_Tasklength = 30;
-char tasks[MAX_Tasks][MAX_Tasklength];
 
-void addTask(){
+void addTask(char tasks[MAX_Tasks][MAX_Tasklength]){
     printf("What tasks would you like to add?\n");
     char task[30];
     scanf("%s", &task);
@@ -17,6 +16,8 @@ void addTask(){
         }
     }
     printf("Task added successfully!\n");
+    printf("Press enter to continue");
+    scanf("%c");
 }
 
 void deleteTask(){
@@ -27,15 +28,15 @@ void completeTask(){
 
 }
 
-void viewTasks(){
+void viewTasks(char tasks[MAX_Tasks][MAX_Tasklength]){
     printf("Your Tasks are:\n");
     for (int i = 0; i < MAX_Tasks; i++) {
         if (strcmp(tasks[i], "")!= 0) {
             printf("(%d) %s\n", i + 1, tasks[i]);
         }
     }
-    int wait;
-    scanf("%d", &wait);
+    printf("Press enter to continue");
+    scanf("%c");
 }
 
 void viewCompletedTasks(){
@@ -48,6 +49,8 @@ void editTask(){
 
 int main(int argc, char const *argv[])
 {
+
+    char tasks[MAX_Tasks][MAX_Tasklength];
     for (int i = 0; i < MAX_Tasks; i++) {
         strcpy(tasks[i], "");
     }
@@ -72,7 +75,7 @@ int main(int argc, char const *argv[])
         switch (choice)
         {
         case 1:
-            addTask();
+            addTask(tasks);
             break;
         case 2:
             deleteTask();
@@ -81,7 +84,7 @@ int main(int argc, char const *argv[])
             completeTask();
             break;
         case 4:
-            viewTasks();
+            viewTasks(tasks);
             break;
         case 5:
             editTask();
@@ -94,7 +97,7 @@ int main(int argc, char const *argv[])
             return 0;
         default:
             printf("Invalid choice. Please try again.\n");
-            break;
+            return 0;
         }
     }
     
