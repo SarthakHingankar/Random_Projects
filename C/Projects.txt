@@ -1,7 +1,5 @@
 guessing game: done
 calculator: done
-todo app: working
-expense tracker
-RNG Thingy
-casino game
-flashcard app
+todo app: done
+expense tracker: working
+smtg where file mani is used
