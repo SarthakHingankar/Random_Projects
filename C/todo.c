@@ -3,7 +3,7 @@
 #include <string.h>
 #include <windows.h>
 
-#define MAX_TASKS 3
+#define MAX_TASKS 10
 #define MAX_LENGTH 100
 
 char *list[MAX_TASKS];
