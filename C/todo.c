@@ -47,19 +47,11 @@ void viewTasks()
             printf("(%i) %s", i + 1, list[i]);
         }
     }
-    printf("Press Enter to continue...");
-    getchar();
 }
 
 void completeTask()
 {
-    for (int i = 0; i < numTask; i++)
-    {
-        if (list[i] != NULL)
-        {
-            printf("(%i) %s", i + 1, list[i]);
-        }
-    }
+    viewTasks();
 
     printf("Enter serial number: ");
     int taskNumber;
@@ -94,13 +86,7 @@ void completeTask()
 
 void deleteTask()
 {
-    for (int i = 0; i < numTask; i++)
-    {
-        if (list[i] != NULL)
-        {
-            printf("(%i) %s", i + 1, list[i]);
-        }
-    }
+    viewTasks();
 
     printf("Enter serial number: ");
     int taskNumber;
@@ -132,13 +118,7 @@ void deleteTask()
 
 void editTask()
 {
-    for (int i = 0; i < numTask; i++)
-    {
-        if (list[i] != NULL)
-        {
-            printf("(%i) %s", (i + 1), list[i]);
-        }
-    }
+    viewTasks();
 
     printf("Enter serial number: ");
     int taskNumber;
