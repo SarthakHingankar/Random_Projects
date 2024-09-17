@@ -42,10 +42,7 @@ void viewTasks()
 {
     for (int i = 0; i < numTask; i++)
     {
-        if (list[i] != NULL)
-        {
-            printf("(%i) %s", i + 1, list[i]);
-        }
+        printf("(%i) %s", i + 1, list[i]);
     }
 }
 
@@ -60,7 +57,7 @@ void completeTask()
     while ((c = getchar()) != '\n' && c != EOF)
         ;
 
-    if (taskNumber > 0 && (taskNumber - 1) < numTask)
+    if (taskNumber > 0 && taskNumber <= numTask)
     {
         free(list[(taskNumber - 1)]);
 
@@ -208,7 +205,7 @@ int main(int argc, char const *argv[])
     int n = sizeof(list) / sizeof(list[0]);
     for (int i = 0; i < n; i++)
     {
-        free(list[i]);
+        printf(list[i]);
     }
 
     return 0;
