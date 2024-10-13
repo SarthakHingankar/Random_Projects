@@ -1,5 +1,0 @@
-guessing game: done
-calculator: done
-todo app: done
-expense tracker: working
-smtg where file mani is used
